@@ -7,8 +7,12 @@
 font-family: 'poppins','sans-serif'
 }
 
-body{
-background: #fff;
+body {
+    display: flex;
+    flex-direction: column; /* يجعل العناصر داخل الـ body تتكدس عموديًا */
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
 }
 
 .header{
@@ -149,7 +153,7 @@ color: rgba(255, 255, 255, 0.5);
   top: 63px;
   width: 50px; /* عرض صغير */
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   transition: width 0.3s ease;
   overflow: hidden;
   display: flex;
@@ -195,3 +199,242 @@ color: rgba(255, 255, 255, 0.5);
 hr{
   color: black;
 }
+/* تنسيق زر اللغة */
+.lang-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-button {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 120px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+/* عند تفعيل القائمة */
+.show {
+  display: block;
+}
+
+    .lang-menu {
+        position: relative;
+        display: inline-block;
+    }
+
+    .lang-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+          background-color: rgba(255, 255, 255, 0.9);
+        min-width: 120px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown a {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+    .dropdown a:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+
+
+    }
+
+    .dropdown .flag-icon {
+        margin-right: 5px;
+    }
+
+    .show {
+        display: block;
+    }
+    *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --accent-color: #641BFF;
+    --heading-font-family: 'Poppins', sans-serif;
+    --body-font-family: 'Lato', sans-serif;
+  }
+
+
+
+  .price-comparison {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 1rem;
+      gap: 50px;
+      font-family: fantasy;
+
+
+
+  }
+
+  .price-column {
+background-background-color: #F5F5DC; /* أبيض مائل للكريمي */
+
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+    padding: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 275px;
+    border-radius: 8px;
+
+  }
+
+  .price-column.popular {
+ background-color: rgba(255, 215, 0, 0.7);
+    position: relative;
+    background-color: var(--accent-color);
+    box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+    color: white;
+    margin-top: -1.5rem;
+    padding-top: 3.5rem;
+    margin-bottom: -1.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .price-column:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .price-column:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .price-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+  }
+
+  .price {
+    font-size: 3.5rem;
+    display: flex;
+  }
+
+  .dollar-sign {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-right: .25rem;
+  }
+
+  .per-month {
+    font-size: .75rem;
+    align-self: flex-end;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+  }
+
+  .plan-name {
+    text-transform: uppercase;
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .price-column.popular .divider {
+    background-color: rgba(255, 255, 255, .2);
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+  }
+
+  .feature img {
+    height: 1.1em;
+    width: 1.1em;
+    margin-right: .5rem;
+  }
+
+  .feature.inactive {
+    color: #999;
+    text-decoration-line: line-through;
+  }
+
+.most-popular {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    right: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--heading-font-family);
+  }
+
+  .cta {
+    border: none;
+    background-color: #005F56;
+    color: white;
+    width: 100%;
+    padding: .75rem 1rem;
+    cursor: pointer;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 3rem;
+    transition: 100ms;
+    transform: scale(1);
+    margin-top: 20px;
+  }
+
+  .price-column.popular .cta {
+    background-color: white;
+    color: var(--accent-color);
+  }
+
+  .cta:hover, .cta:focus {
+    transform: scale(1.1);
+  }

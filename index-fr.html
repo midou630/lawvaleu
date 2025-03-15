@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ARBICORP</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="https://fonts.googleapis.com/css?family=loto|poppins&display=swap" href="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">ARBICORP</a>
+
+        <nav class="navbar">
+
+
+            <a href="#"><i class='bx bx-location-plus'></i> موقعنا</a>
+            <a href="#"><i class='bx bx-user'></i> من نحن</a>
+            <!-- زر اختيار اللغة -->
+            <div class="lang-menu">
+                <button class="lang-button" onclick="toggleDropdown()">
+                    <span class="flag-icon flag-icon-fr"></span>
+                </button>
+                <div class="dropdown" id="langDropdown">
+                    <a href="index-ar.html"><span class="flag-icon flag-icon-dz"></span> العربية</a>
+                    <a href="index-en.html"><span class="flag-icon flag-icon-us"></span> English</a>
+                    <a href="index-fr.html"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </header>
+
+    <!-- الشريط الجانبي الثابت -->
+    <div class="sidebar">
+        <a href="#"><i class='bx bx-home-alt'></i><span>our services</span></a>
+        <a href="#"><i class='bx bx-location-plus'></i><span>our location</span></a>
+        <a href="#"><i class='bx bx-user'></i><span>about us</span></a>
+    </div>
+
+    <div class="image-container">
+        <div class="overlay">
+            <div class="text">
+                <p>get started now</p>
+            </div>
+            <a href="signup.html" class="button">register now</a>
+        </div>
+    </div>
+    <section class="price-comparison">
+      <div class="price-column">
+        <div class="price-header">
+          <div class="price">
+            <div class="dollar-sign">$</div>
+            10
+            <div class="per-month">/mo</div>
+          </div>
+          <div class="plan-name">Basic</div>
+        </div>
+        <div class="divider"></div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Feature A
+        </div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Feature B
+        </div>
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Feature C
+        </div>
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Feature D
+        </div>
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Feature E
+        </div>
+        <div class="feature inactive">
+          <img src="x-square.svg">
+          Feature F
+        </div>
+        <button class="cta">Start Today</button>
+      </div>
+
+      <div class="price-column">
+        <div class="price-header">
+          <div class="price">
+            <div class="dollar-sign">$</div>
+            50
+            <div class="per-month">/mo</div>
+          </div>
+          <div class="plan-name">Enterprise</div>
+        </div>
+        <div class="divider"></div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Feature A
+        </div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Feature B
+        </div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Feature C
+        </div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Feature D
+        </div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Feature E
+        </div>
+        <div class="feature">
+          <img src="check-circle.svg">
+          Feature F
+        </div>
+        <button class="cta">Start Today</button>
+      </div>
+
+      <div class="price-column">
+   <div class="price-header">
+     <div class="price">
+       <div class="dollar-sign"></div>
+       10
+       <div class="per-month">/mo</div>
+     </div>
+     <div class="plan-name">Basic</div>
+   </div>
+   <div class="divider"></div>
+   <div class="feature"><img src="check-circle.svg"> Feature A</div>
+   <div class="feature"><img src="check-circle.svg"> Feature B</div>
+   <div class="feature inactive"><img src="x-square.svg"> Feature C</div>
+   <button class="cta">Start Today</button>
+ </div>
+
+ <div class="price-column">
+   <div class="price-header">
+     <div class="price">
+       <div class="dollar-sign">$</div>
+       50
+       <div class="per-month">/mo</div>
+     </div>
+     <div class="plan-name">Enterprise</div>
+   </div>
+   <div class="divider"></div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature A
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature B
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature C
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature D
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature E
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature E
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature E
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature E
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature E
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature E
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature E
+   </div>
+   <div class="feature">
+     <img src="check-circle.svg">
+     Feature F
+   </div>
+   <button class="cta">Start Today</button>
+ </div>
+
+
+    </section>
+    <script>
+        function toggleDropdown() {
+            document.getElementById("langDropdown").classList.toggle("show");
+        }
+
+        // إغلاق القائمة عند الضغط خارجها
+        window.onclick = function(event) {
+            if (!event.target.closest('.lang-menu')) {
+                document.getElementById("langDropdown").classList.remove("show");
+            }
+        }
+    </script>
+
+</body>
+</html>
